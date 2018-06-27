@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relativeLayoutcircle"
+            android:layout_height="150dp"
+            android:layout_below="@+id/bn_logout"
+            android:layout_centerHorizontal="true">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/prof_pict"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/common_google_signin_btn_icon_dark"
+                app:civ_border_color="#212121"
+                app:civ_border_width="2dp"
+                android:layout_marginEnd="38dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/Gmail" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Your Name Display Here"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginBottom="3dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/prof_pict" />
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Email"
+                android:layout_below="@+id/name"
+                android:layout_toEndOf="@+id/prof_pict" />
+
+            <TextView
+                android:id="@+id/Gmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/bn_logout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_logout" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:text="Wisata yang pernah dikunjungi" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="331dp"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:rowCount="2"
+            android:verticalSpacing="10dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/bn_addWisata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:scaleType="center"
+            android:layout_margin="@dimen/fab_margin"
+            android:clickable="true"
+            android:src="@drawable/ic_add_new"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="normal" />
+    </FrameLayout>
+</LinearLayout>

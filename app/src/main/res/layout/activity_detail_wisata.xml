@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Judul"
+            android:textColor="@color/white"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:autofit="http://schemas.android.com/apk/res-auto"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="55dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:backgroundTint="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    >
+
+                </android.support.v4.view.ViewPager>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    autofit:srcCompat="@drawable/imgl" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    autofit:srcCompat="@drawable/imgr" />
+
+                <ImageView
+                    android:id="@+id/label"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    autofit:srcCompat="@drawable/label_alam" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/desk_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/dotted"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/judulDeskripsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Deskripsi Wisata :"
+                        android:textSize="7pt" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/judulDeskripsi"
+                        android:layout_below="@+id/judulDeskripsi"
+                        android:layout_marginBottom="40dp">
+
+                        <TextView
+                            android:id="@+id/deskripsi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="coba"
+                            android:textSize="6pt" />
+                    </ScrollView>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/selanjutnya"
+                    android:layout_width="75dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/plesirbiru"
+                    android:text="Selanjutnya"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="3pt" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="60dp">
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/judulTransportasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_marginTop="5dp"
+                        android:text="Transportasi"
+                        android:textSize="7pt" />
+
+                    <ImageView
+                        android:id="@+id/transportasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:layout_alignStart="@+id/judulTransportasi"
+                        android:layout_below="@+id/judulTransportasi" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        android:id="@+id/judulJarak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Jarak"
+                        android:textAlignment="center"
+                        android:textSize="7pt" />
+
+                    <ImageView
+                        android:id="@+id/gambarjarak"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignStart="@id/judulJarak"
+                        android:layout_below="@id/judulJarak"
+                        android:layout_margin="10dp"
+                        autofit:srcCompat="@drawable/ikonjarak" />
+
+                    <TextView
+                        android:id="@+id/jarak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="80dp"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:text="10 KM"
+                        android:textColor="@color/plesirbiru"
+                        android:textSize="5pt" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/judulMedan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_marginTop="5dp"
+                        android:text="Medan Jalan"
+                        android:textSize="7pt" />
+
+                    <ImageView
+                        android:id="@+id/medanJalan"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:layout_alignStart="@+id/judulMedan"
+                        android:layout_below="@id/judulMedan" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageButton
+            android:id="@+id/plesir"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitXY"
+            autofit:srcCompat="@drawable/btn_plesir" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

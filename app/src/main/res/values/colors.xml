@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#17202a</color>
+    <color name="colorPrimaryDark">#17202a</color>
+    <color name="colorAccent">#3498db</color>
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="title">#4c4c4c</color>
+    <color name="background_title">#900288E9</color>
+    <color name="AddMark">#90038ff4</color>
+    <color name="AddMarkWisata">#90038ff4</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000</color>
+    <color name="abu2">#999999</color>
+    <color name="plesirbiru">#2980b9</color>
+    <color name="emas">#FFD700</color>
+    <color name="cokelat">#f39c12</color>
+    <color name="hijau">#27ae60</color>
+    <color name="merah">#d35400</color>
+    <color name="ungu">#8e44ad</color>
+    <color name="biru">#3498db</color>
+
+    
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/ic_rekomendasi"
+        android:title="rekomendasi"
+        android:id="@+id/tujuan_rekomendasi"
+        />
+    <item
+        android:icon="@drawable/ic_tujuan"
+        android:title="tujuan"
+        android:id="@+id/tujuan_tujuan"
+        />
+    <item
+        android:icon="@drawable/ic_kuliner"
+        android:title="kuliner"
+        android:id="@+id/tujuan_kuliner"
+        />
+</menu>

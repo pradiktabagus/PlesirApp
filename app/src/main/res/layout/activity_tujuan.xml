@@ -1,0 +1,194 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:paddingBottom="50dp"
+        android:clipToPadding="true"
+        android:background="@android:color/white"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="#000">
+            <TextView
+                android:id="@+id/info_kuliner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Info Kuliner"
+                android:textColor="#fff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+
+            android:orientation="vertical"
+            android:id="@+id/linearLayout2">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/img_default"
+                    android:layout_marginStart="17dp"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/judul_mak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="9pt"
+                    android:textStyle="bold"
+                    android:text="Judul Makanan"
+                    android:layout_above="@+id/imageView6"
+                    android:layout_alignStart="@+id/imageView6" />
+
+                <TextView
+                    android:id="@+id/jam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00.00 - 00.00"
+                    android:textSize="5pt"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_below="@+id/imageView6"
+                    android:layout_alignStart="@+id/judul_mak" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/map_jam"
+                    android:layout_alignBottom="@+id/jam"
+                    android:layout_alignStart="@+id/imageView6" />
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView6"
+                    android:layout_toEndOf="@+id/imageView6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Menu :" />
+
+                <LinearLayout
+                    android:paddingTop="15dp"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_above="@+id/imageView10"
+                    android:layout_toEndOf="@+id/imageView6"
+                    android:layout_alignStart="@+id/imageView9"
+                    android:id="@+id/linearLayout3"
+                    android:layout_alignTop="@+id/imageView6">
+
+                    <LinearLayout
+                        android:id="@+id/menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="219dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="10dp">
+
+
+                        <!--<TextView
+                            android:id="@+id/nama_kul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="5pt"
+                            android:layout_marginRight="5dp"
+                            android:text="Nama kuliner" />
+
+                        <TextView
+                            android:id="@+id/harga"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="5pt"
+                            android:layout_weight="1"
+                            android:text="Rp. 10000,-" />-->
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/colorPrimary"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="12pt"
+            android:text="Judul" />
+
+        <ImageView
+            android:id="@+id/blora"
+            android:layout_width="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_title" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+

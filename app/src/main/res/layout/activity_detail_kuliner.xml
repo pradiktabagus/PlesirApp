@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/sliderKuliner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_margin="15dp">
+
+        </android.support.v4.view.ViewPager>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/jam"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                autofit:srcCompat="@drawable/ikonjam" />
+
+            <TextView
+                android:id="@+id/jamBuka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/jam"
+                android:layout_marginLeft="25dp"
+                android:text="08.00 - 20:00"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/makanan"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="50dp"
+                android:layout_centerVertical="true"
+                autofit:srcCompat="@drawable/ikonmakanan" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/makanan"
+                android:layout_marginStart="13dp">
+                <TextView
+                    android:id="@+id/menumakanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/minuman"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                autofit:srcCompat="@drawable/ikonminuman" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@+id/minuman"
+                android:layout_alignParentTop="true">
+                <TextView
+                    android:id="@+id/menuminuman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

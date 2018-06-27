@@ -1,0 +1,185 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="4dp"
+    android:elevation="1dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:weightSum="4"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="10dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal">
+
+
+                <ImageView
+                    android:id="@+id/coverImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/goaterawang" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titleTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:text="Goa Terawang"
+                        android:textAlignment="center"
+                        android:textColor="@color/plesirbiru"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/bingkai"
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="135dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_bingkai" />
+
+                <TextView
+                    android:id="@+id/tit_bingkai"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="175dp"
+                    android:text="KATEGORI"
+                    android:textColor="@color/white"
+                    android:textSize="6pt"
+                    android:rotation="33"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/emblem"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="50dp"
+                        card_view:srcCompat="@drawable/ic_no1" />
+                </RelativeLayout>
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.8"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:gravity="center|right"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                       >
+
+                        <TextView
+                            android:id="@+id/jarak"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="0.5km"
+                            android:textColor="@color/abu2"
+                            android:textSize="5pt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="-"
+                            android:textColor="@color/abu2"
+                            android:textSize="5pt" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="270dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/alamat"
+                            android:layout_width="230dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Jalan Kresna 3 Bangkle Blora"
+                            android:textColor="@color/abu2"
+                            android:textSize="5pt" />
+                        <RatingBar
+                            android:id="@+id/bintang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:numStars="1"
+                            android:stepSize="0.2"
+                            android:rating="1"
+                            android:progressTint="@color/emas"
+                            android:isIndicator="true" />
+
+                        <TextView
+                            android:id="@+id/rating"
+                            android:paddingTop="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="X 10"
+                            android:textColor="@color/abu2"
+                            android:textSize="5pt" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "254908721895",
+    "firebase_url": "https://plesirbloraapp.firebaseio.com",
+    "project_id": "plesirbloraapp",
+    "storage_bucket": "plesirbloraapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254908721895:android:f7dbcb0dbe993266",
+        "android_client_info": {
+          "package_name": "com.example.dickycn.plesirapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254908721895-a3ukjqg5ggk58oq3t33rhfl8gvp5icmq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dickycn.plesirapp",
+            "certificate_hash": "d3f127df0b09dfe0f13e31c5d8544e6e19004fd4"
+          }
+        },
+        {
+          "client_id": "254908721895-ohnr6snvnkc69nh7mj1g2aqiia4rklkg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFJGk0Qcj9RnTDYql3hVaytFUNK56nCj8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254908721895-ohnr6snvnkc69nh7mj1g2aqiia4rklkg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
